@@ -17,12 +17,6 @@ class ExampleViewController: UIViewController {
         let document = try! PDFDocument.from(filePath: url)
         
         let pdf = PDFViewController(document: document!)
-        pdf.annotationController.annotationTypes = [
-            PDFHighlighterAnnotation.self,
-            PDFPenAnnotation.self,
-            PDFTextAnnotation.self
-        ]
-        
         self.navigationController?.pushViewController(pdf, animated: true)
     }
 }

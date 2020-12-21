@@ -73,6 +73,12 @@ open class PDFViewController: UIViewController {
     public init(document: PDFDocument) {
         super.init(nibName: nil, bundle: nil)
         self.document = document
+        self.annotationController = PDFAnnotationController(document: self.document, delegate: self)
+        self.annotationController.annotationTypes = [
+            PDFHighlighterAnnotation.self,
+            PDFPenAnnotation.self,
+        ]
+        self.scrollDirection = .vertical
     }
     
     /**
