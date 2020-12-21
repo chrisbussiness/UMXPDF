@@ -90,7 +90,6 @@ open class PDFViewController: UIViewController {
         self.annotationController.annotationTypes = [
             PDFHighlighterAnnotation.self,
             PDFPenAnnotation.self,
-            PDFTextAnnotation.self
         ]
         self.scrollDirection = .vertical
     }
