@@ -374,7 +374,7 @@ extension PDFViewController: PDFSinglePageViewerDelegate {
     }
     
     public func singlePageViewerDidBeginDragging() {
-        self.hideBars(state: true)
+        //self.hideBars(state: true)
     }
     
     public func singlePageViewerDidEndDragging() { }
