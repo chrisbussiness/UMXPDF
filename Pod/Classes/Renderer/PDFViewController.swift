@@ -9,6 +9,7 @@
 import UIKit
 import SafariServices
 
+@objcMembers
 open class PDFViewController: UIViewController {
     
     /// A boolean value that determines whether the navigation bar and scrubber bar hide on screen tap
