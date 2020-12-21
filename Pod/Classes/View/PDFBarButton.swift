@@ -11,7 +11,7 @@ import UIKit
 open class PDFBarButton: UIBarButtonItem {
     fileprivate let button = UIButton(frame: CGRect(x: 0, y: 0, width: 32, height: 32))
     fileprivate var toggled = false
-    fileprivate lazy var defaultTint = UIColor.blue
+    fileprivate lazy var defaultTint = UIColor.white
     fileprivate var block: ((PDFBarButton) -> ())?
     
     override open var tintColor: UIColor? {

@@ -380,7 +380,7 @@ class ResizableBorderView: UIView {
         context.saveGState()
         
         context.setLineWidth(1.0)
-        context.setStrokeColor(UIColor.blue.cgColor)
+        context.setStrokeColor(UIColor.red.cgColor)
         context.addRect(self.bounds.insetBy(dx: ResizableBorderView.borderSize/2, dy: ResizableBorderView.borderSize/2))
         context.strokePath()
         
