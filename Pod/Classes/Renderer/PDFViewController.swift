@@ -87,6 +87,12 @@ open class PDFViewController: UIViewController {
     public convenience init(document: PDFDocument, annotationController: PDFAnnotationController) {
         self.init(document: document)
         self.annotationController = PDFAnnotationController(document: self.document, delegate: self)
+        self.annotationController.annotationTypes = [
+            PDFHighlighterAnnotation.self,
+            PDFPenAnnotation.self,
+            PDFTextAnnotation.self
+        ]
+        self.scrollDirection = .vertical
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -294,7 +300,7 @@ open class PDFViewController: UIViewController {
     
     //MARK: - IBActions
     func handleTap(_ gestureRecognizer: UIGestureRecognizer) {
-        self.toggleBars()
+        //self.toggleBars()
     }
     
     @objc func shareDocument() {

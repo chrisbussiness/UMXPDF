@@ -8,8 +8,7 @@
 
 import UIKit
 
-
-@objc public protocol PDFAnnotation {
+public protocol PDFAnnotation {
     
     /// The page number the annotation is located on
     var page: Int? { get set }
