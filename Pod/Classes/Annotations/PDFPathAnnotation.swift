@@ -186,7 +186,7 @@ extension PDFPathAnnotation: ResizableViewDelegate {
     func resizableViewDidBeginEditing(view: ResizableView) { }
     
     func resizableViewDidEndEditing(view: ResizableView) {
-        self.rect = self.path.bounds
+        self.rect = path.cgPath.boundingBoxOfPath
     }
     
     func resizableViewDidSelectAction(view: ResizableView, action: String) {
