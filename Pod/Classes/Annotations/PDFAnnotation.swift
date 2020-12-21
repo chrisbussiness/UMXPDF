@@ -8,6 +8,7 @@
 
 import UIKit
 
+@objcMembers
 public protocol PDFAnnotation {
     
     /// The page number the annotation is located on
