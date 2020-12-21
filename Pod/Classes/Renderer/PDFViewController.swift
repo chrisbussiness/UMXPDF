@@ -255,6 +255,7 @@ open class PDFViewController: UIViewController {
     }
     
     func showActivitySheet() {
+        annotationController.unselectAll()
         annotationController.finishAnnotation()
         let renderer = PDFRenderController(document: document, controllers: [
             annotationController,
